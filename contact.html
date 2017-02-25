@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+   <title> צור קשר </title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+   	<link href="https://fonts.googleapis.com/css?family=Amatica+SC|Secular+One|Varela+Round" rel="stylesheet"> 
+<meta name="robots" content="noindex,follow" />
+<!--Accessiblity-->
+		<script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
+  
+<script src="https://www.negishim.com/accessibility/accessibility_pro.js" type="text/javascript"></script>
+<script type="text/javascript">
+    accessibility_rtl = false;
+    pixel_from_side = 5;
+    pixel_from_start = 5;
+	css_style = 2;
+</script>
+
+  </head>
+  <body>
+  
+    <!-- Navbar -->
+    <div class="navbar">
+      <img class="logo" src="images/logo2.png" alt="Liluhik logo"onClick="window.open('index.html');"/>
+
+      <div class="navbar-buttons">
+        <button class="button" type="button" name="button">להירשם</button>
+        <span><img class="open-menu" src="images/menu.svg" alt=""/></span>
+      </div>
+    </div>
+	
+	
+
+    <!-- Overlay Navigation Menu -->
+    <div class="overlay">
+      <h2 class="nav-title">מפת אתר</h2>
+      <nav class="overlay-menu">
+        <ul>
+          <li><a href="#">אודות</a></li>
+          <li><a href="#">דברים שלי</a></li>
+          <li><a href="#">צור קשר</a></li>
+          <li><img class="close-menu" src="images/close.svg" alt=""/></li>
+        </ul>
+      </nav>
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+	<div class="wrapper">
+		<div id="main" style="padding:50px 0 0 0;">
+		
+		<!-- Form -->
+		<form id="contact-form" action="contact.php" method="post">
+			<h3>צור קשר</h3>
+			<h4>אני אחזור אליך תוך 24 שעות</h4>
+			<div>
+				<label>
+					<span>שם </span>
+					<input type="text" name="name" placeholder="נא לרשום שמך" tabindex="1" required autofocus>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>דואר אלקטרוני</span>
+					<input type="email" name="email" placeholder="נא לרשום דואר אלקטרוני" tabindex="2" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span> הודעה</span>
+					<textarea name="message"  id="message" placeholder="כמה שיותר מפורטת" tabindex="5" required></textarea>
+				</label>
+			</div>
+			<div>
+				<button name="שלח" type="submit" id="contact-submit" onClick="window.open('index.html');">שלח דואר אלקטרוני</button>
+				</div>
+				<div>
+				<button name="איפוס" type="reset" id="contact-reset">איפוס</button>
+			</div>
+		</form>
+		<!-- /Form -->
+		
+		</div>
+	</div>
+	
+
+	<script src="js/scripts.js"></script>
+  </body>
+</html>
